@@ -19,9 +19,9 @@ const getFromLocalStorage = () => {
 
 const resetIndex = (tasks) => {
   for (let i = 0; i < tasks.length; i += 1) {
-    let indx = i + 1;
-    indx = i;
-    tasks[i].index = indx;
+    let index = i + 1;
+    index = i;
+    tasks[i].index = index;
   }
 };
 
@@ -61,7 +61,7 @@ const displayTasks = () => {
       editTask(e.target.value, tsk.index);
       taskDesc.blur();
     });
-    deleteTask.classList.add('fas', 'fa-ellipsis-v');
+    deleteTask.classList.add('fa-solid', 'fa-trash');
     deleteTask.addEventListener('click', () => {
       rmvTask(tsk.index);
       resetIndex(mylocal);
