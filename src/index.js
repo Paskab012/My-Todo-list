@@ -1,6 +1,6 @@
 /* eslint-disable import/extensions */
 import './index.css';
-import setState from './modules/getStates';
+import setState from './module/operate';
 
 let tasks = [];
 const taskWrapper = document.querySelector('.to-dos');
