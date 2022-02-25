@@ -1,9 +1,9 @@
-# MY-TODO-LIST
+# MY-TODO-LIST ADDING AND REMOVING TASKS
 
-> Just a simple app showing my task to be done.
+> Just a simple app showing my task to be done, adding and removing them from the list
 
 > Simple look of the project
-> ![Simple view](pn.png)
+> ![Simple view](sc.png)
 
 ## Built With
 
