@@ -3,7 +3,7 @@
 > Just a simple app showing my task to be done.
 
 > Simple look of the project
-> ![Simple view](todo.png)
+> ![Simple view](pn.png)
 
 ## Built With
 
