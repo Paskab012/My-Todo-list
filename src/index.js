@@ -1,4 +1,5 @@
-import './style.css';
+/* eslint-disable import/extensions */
+import './index.css';
 import setState from './modules/getStates';
 
 let tasks = [];
