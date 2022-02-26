@@ -1,4 +1,3 @@
-/* eslint-disable import/extensions */
 import './index.css';
 import setState from './module/operate';
 
