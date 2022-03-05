@@ -45,6 +45,8 @@ describe('functionality test of add and remove', () => {
     expect(li.length).toBe(5);
   });
 
+  // Adding function for testing all completed task
+
   test('should clear all completed tasks', () => {
     let arr = [];
     createMockDoc();
@@ -68,6 +70,8 @@ describe('functionality test of add and remove', () => {
     const li = document.querySelectorAll('ul li');
     expect(li.length).toBe(5);
   });
+
+  // Adding a function to test for editability
 
   test(' should check for editability', () => {
     let arr = [];
