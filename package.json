@@ -5,7 +5,11 @@
   "private": "true",
   "scripts": {
     "start": "webpack serve --open",
-    "build": "webpack"
+    "build": "webpack",
+    "test": "jest"
+  },
+  "jest": {
+    "verbose": true
   },
   "repository": {
     "type": "git",
@@ -19,9 +23,12 @@
   },
   "homepage": "https://github.com/KABIKA681/My-Todo-list#readme",
   "dependencies": {
-    "lodash": "^4.17.21"
+    "@fortawesome/fontawesome-free": "^6.0.0",
+    "jsdom": "^19.0.0"
   },
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.16.8",
+    "@types/jest": "^27.4.1",
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.6.0",
     "eslint": "^7.32.0",
@@ -29,6 +36,7 @@
     "eslint-plugin-import": "^2.25.4",
     "hint": "^6.1.9",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^27.5.1",
     "sass-loader": "^12.6.0",
     "style-loader": "^3.3.1",
     "stylelint": "^13.13.1",
