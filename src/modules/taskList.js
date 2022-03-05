@@ -43,7 +43,11 @@ class ToDoList {
   loadTask(task) {
     const index = this.createTask(task.description);
     const checkBoxes = document.querySelectorAll('.checkbox');
-    this.taskList.push({ index, description: task.description, completed: task.completed });
+    this.taskList.push({
+      index,
+      description: task.description,
+      completed: task.completed,
+    });
     window.localStorage.setItem('tasks', JSON.stringify(this.taskList));
     if (task.completed) {
       checkBoxes[index - 1].click();
@@ -56,9 +60,11 @@ class ToDoList {
 
   removeTask(index) {
     this.taskList.splice(index, 1);
-    this.taskList = this.taskList.map((task, i) => (
-      { index: i + 1, description: task.description, completed: task.completed }
-    ));
+    this.taskList = this.taskList.map((task, i) => ({
+      index: i + 1,
+      description: task.description,
+      completed: task.completed,
+    }));
 
     window.localStorage.setItem('tasks', JSON.stringify(this.taskList));
   }
@@ -70,9 +76,11 @@ class ToDoList {
 
   removeCompletedTask() {
     this.taskList = this.taskList.filter((task) => task.completed === false);
-    this.taskList = this.taskList.map((task, i) => (
-      { index: i + 1, description: task.description, completed: task.completed }
-    ));
+    this.taskList = this.taskList.map((task, i) => ({
+      index: i + 1,
+      description: task.description,
+      completed: task.completed,
+    }));
     window.localStorage.setItem('tasks', JSON.stringify(this.taskList));
   }
 }

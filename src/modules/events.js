@@ -1,6 +1,7 @@
+/* eslint-disable operator-linebreak */
 /* eslint-disable linebreak-style */
 import { getTasks, checkTaskStyle } from './functions.js';
-import deleteTask from './deleteTask.js';
+import removeTaskAdded from './removeTask.js';
 
 export const taskAdd = (event, list) => {
   const input = document.querySelector('#task');
@@ -18,7 +19,8 @@ export const taskAdd = (event, list) => {
 };
 
 export const taskCompleted = (event, list) => {
-  const checked = !event.target.parentNode.children[1].classList.contains('completed');
+  const checked =
+    !event.target.parentNode.children[1].classList.contains('completed');
   const listOfTasks = document.querySelectorAll('.checkbox');
   const index = Array.from(listOfTasks).indexOf(event.target);
   event.target.parentNode.classList.toggle('disabled');
@@ -43,14 +45,15 @@ export const taskEdit = (event, list) => {
     task.classList.remove('bg-yellow');
     task.children[1].disabled = true;
     const index = iconsArr.indexOf(event.target);
-    deleteTask(index, list, task);
+    removeTaskAdded(index, list, task);
   }
 };
 
 export const updateValue = (event, list) => {
   const icon = event.target.parentNode.children[2];
   if (!event.target.value) {
-    event.target.placeholder = "the task shouldn't be empty. Please, add value.";
+    event.target.placeholder =
+      "the task shouldn't be empty. Please, add value.";
     return;
   }
   if (event.keyCode === 13) {

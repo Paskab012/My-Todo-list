@@ -1,4 +1,4 @@
-const deleteTask = (index, list, task) => {
+const removeTaskAdded = (index, list, task) => {
   list.removeTask(index);
   if (!list.taskList.length) {
     task.parentNode.classList.add('dn');
@@ -6,4 +6,4 @@ const deleteTask = (index, list, task) => {
   task.remove();
 };
 
-export default deleteTask;
+export default removeTaskAdded;
