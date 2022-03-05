@@ -7,6 +7,8 @@
 
 > ![Simple view](test.png)
 
+> ![Simple view](test2.png)
+
 ## Built With
 
 - HTML, CSS, JAVASCRIPT
