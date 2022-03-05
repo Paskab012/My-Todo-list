@@ -5,6 +5,8 @@
 > Simple look of the project
 > ![Simple view](sc.png)
 
+> ![Simple view](test.png)
+
 ## Built With
 
 - HTML, CSS, JAVASCRIPT
